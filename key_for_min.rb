@@ -8,9 +8,9 @@ def key_for_min_value(name_hash)
   name_hash.each do |k, v|
     if v < name_hash[min]
       min = k
-    elsif name_hash.empt?
+    elsif name_hash.empty?
       nil
-
+      
     end
   end
   min
