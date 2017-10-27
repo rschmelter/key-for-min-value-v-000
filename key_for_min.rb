@@ -15,11 +15,11 @@ def key_for_min_value(name_hash)
 end
 
 
-arr = [2,8,6,1,10]
-min = arr[0]
-arr.each {|e|
-  if e < min
-    min = e
-  end
-}
-return min
+# arr = [2,8,6,1,10]
+# min = arr[0]
+# arr.each {|e|
+#   if e < min
+#     min = e
+#   end
+# }
+# return min
