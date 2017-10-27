@@ -5,10 +5,10 @@ def key_for_min_value(name_hash)
   if name_hash.empty?
     nil
   end
-  min = name_hash.first
+  min = name_hash.first[1]
   name_hash.each do |k, v|
   #  binding.pry
-    if v < min[1]
+    if v < min
       min = v
     end
   end
