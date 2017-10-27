@@ -15,7 +15,7 @@ def key_for_min_value(name_hash)
   min
 
 end
- 
+
 
 
 # arr = [2,8,6,1,10]
