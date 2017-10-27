@@ -5,16 +5,17 @@ def key_for_min_value(name_hash)
   if name_hash.empty?
     nil
   end
-  min = name_hash.first[1]
+  min = name_hash.first[0]
   name_hash.each do |k, v|
   #  binding.pry
-    if v < min
-      min = v
+    if v < name_hash[min]
+      min = k
     end
   end
   min
 
 end
+ 
 
 
 # arr = [2,8,6,1,10]
