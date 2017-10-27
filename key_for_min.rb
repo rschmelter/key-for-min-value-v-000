@@ -1,7 +1,7 @@
 
 
 def key_for_min_value(name_hash)
-  if name_hash.empty
+  if name_hash == {}
     return nil
   end
   min = name_hash.first[0]
