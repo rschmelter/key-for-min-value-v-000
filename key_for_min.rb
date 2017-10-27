@@ -5,19 +5,19 @@ def key_for_min_value(name_hash)
   if name_hash.empty?
     nil
   end
-  min = {key => value}
+  min = name_hash.first
   name.hash.each do |k, v|
     if v < min
       min = v
-    end    
   end
   min
+  
 end
 
 
 arr = [2,8,6,1,10]
 min = arr[0]
-arr.each {|e| 
+arr.each {|e|
   if e < min
     min = e
   end
