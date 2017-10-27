@@ -1,16 +1,13 @@
 
 
 def key_for_min_value(name_hash)
-  # if name_hash.empty?
-  #   nil
-  # end
+  if name_hash == {}
+    nil
+  end
   min = name_hash.first[0]
   name_hash.each do |k, v|
     if v < name_hash[min]
       min = k
-    elsif name_hash.empty?
-      nil
-
     end
   end
   min
